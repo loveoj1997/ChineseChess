@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>menu</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./static/img/icon.ico" />
+    <style type="text/css">
+        <!--
+
+        a:link {
+            font-size: 20px;
+            color: #2946d2;
+            text-decoration: none;
+        }
+        a:visited {
+            font-size: 20px;
+            color: #2946d2;
+            text-decoration: none;
+        }
+        a:hover {
+            font-size: 20px;
+            color: #2946d2;
+            text-decoration: underline;
+        }
+
+        -->
+    </style>
+</head>
+
+<body bgcolor="#B6A69A">
+    <li style="list-style-type:none;">
+        <p style="text-align: center"><a href="AIAI.html" style="text-decoration:none;">观棋不语</a></p>
+    </li>
+
+    <li style="list-style-type:none;">
+        <p style="text-align: center"><a href="UIUI.html" style="text-decoration:none;">在本地实现的PVP</a></p>
+    </li>
+
+    <script language="javascript">
+        function gaming()
+        {
+            var url=new Array();
+            url[0]="UIAI.html";
+            url[1]="AIUI.html";
+            var ints=parseInt(Math.random()*(url.length));
+            window.location=url[ints];
+        }
+    </script>
+
+    <li style="list-style-type:none;">
+        <p style="text-align: center"><a href="javascript:gaming()" style="text-decoration:none;">对阵AI，随机红黑方</a></p>
+    </li>
+
+    <script language="javascript">
+        function ending()
+        {
+            var url=new Array();
+            url[0]="end.html";
+            url[1]="end2.html";
+            var ints=parseInt(Math.random()*(url.length));
+            window.location=url[ints];
+        }
+    </script>
+
+    <li style="list-style-type:none;">
+        <p style="text-align: center"><a href="javascript:ending()" style="text-decoration:none;">试试残局，玩家执红先行</a></p>
+    </li>
+
+
+</body>
+</html>
